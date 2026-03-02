@@ -58,9 +58,7 @@
       <div class="section"><strong>Expected Harvest:</strong> ${plotData.expectedHarvest}</div>
       <div class="section"><strong>Uses:</strong> ${plotData.uses}</div>
       <div class="section"><strong>Fun Facts:</strong> ${plotData.funFacts}</div>
-      <div class="section images">
-        <strong>Plant Images:</strong><br>
-        ${plotData.images.map(img => `<img src="${img}" alt="Plant image">`).join("")}
+      
       </div>
     `;
   </script>
@@ -68,5 +66,6 @@
 </body>
 </html>
 
- images: [
-        ]
+  <div class="section images">
+        <strong>Plant Images:</strong><br>
+        ${plotData.images.map(img => `<img src="${img}" alt="Plant image">`).join("")}
